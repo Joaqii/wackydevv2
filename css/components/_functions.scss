@@ -1,0 +1,47 @@
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+%skew-content {
+  content: "";
+  transition: all 0.3s;
+  display: block;
+  padding: 0.2rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -0.2rem;
+  right: -0.2rem;
+  z-index: -1;
+  transform: skewX(-15deg);
+  opacity: 0.6;
+}
+
+.skew-background {
+  position: relative;
+  text-shadow: 0.2rem 0.4rem 0rem #343a408e;
+  &::after {
+    @extend %skew-content;
+    background-image: linear-gradient(to top left, #f08c00, #e67700);
+  }
+  &::before {
+    @extend %skew-content;
+    outline-offset: 0.4rem;
+    outline: 0.2rem solid #f08c00;
+    background-image: linear-gradient(to top left, #868e96, #343a40);
+    transform: skewX(15deg);
+    opacity: 0;
+  }
+  display: inline-block;
+  transition: all 0.5s;
+  &:hover {
+    transform: translateY(-0.5rem);
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      opacity: 0.6;
+    }
+  }
+}

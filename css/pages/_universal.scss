@@ -1,0 +1,46 @@
+.section {
+  &__header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem;
+    & .logo {
+      font-size: 3.2rem;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+.container {
+  &__width {
+    width: 100%;
+  }
+}
+
+.icon {
+  position: relative;
+  &__shadow {
+    top: 10%;
+    position: absolute;
+    color: black;
+    opacity: 0.2;
+  }
+}
+
+.content-loading {
+  position: relative;
+  z-index: 3;
+  &::after {
+    content: "loading...";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,50 @@
+.fixed-menu-logo {
+  transition: all 0.4s;
+  right: 0;
+  font-size: 4.8rem;
+  color: white;
+  background: none;
+  border: none;
+  position: fixed;
+  top: 0;
+  padding: 2.4rem;
+  z-index: 99999999;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu {
+  &__desktop {
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(17, 17, 17, 0.897);
+    box-shadow: 0 1.2rem 1.2rem rgba(0, 0, 0, 0.205);
+    display: flex;
+    justify-content: center;
+    transform: translate(100%);
+    &-list {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      gap: 6.4rem;
+      &-item a {
+        transition: all 0.3s;
+        font-weight: 700;
+        font-size: 2.4rem;
+        text-decoration: none;
+        color: #e9ecef;
+        &:hover {
+          background-color: #f76707;
+          font-size: 2rem;
+          padding: 0.2rem 0.8rem;
+          outline: 0.1rem solid transparent;
+          outline-offset: 0.5rem;
+        }
+      }
+    }
+  }
+}

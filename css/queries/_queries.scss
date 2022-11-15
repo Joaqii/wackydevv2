@@ -1,0 +1,158 @@
+// 1180px
+@media (max-width: 73.75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .container {
+    width: 90rem;
+  }
+  .img {
+    &__pic-of-me {
+      &__box {
+        justify-self: center;
+        &::after {
+          top: -7rem;
+          right: -7rem;
+        }
+      }
+    }
+  }
+  .col- {
+    &4 {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  iframe {
+    height: 20rem;
+  }
+}
+
+// 930px
+@media (max-width: 58.12rem) {
+  html {
+    font-size: 50%;
+  }
+  .knowmore__icon {
+    font-size: 4.8rem;
+  }
+}
+
+// 878px
+@media (max-width: 54.87em) {
+  .container {
+    width: 70rem;
+  }
+  .section__hero {
+    height: 60rem;
+  }
+  .col-2 {
+    grid-template-columns: 1fr !important;
+    gap: 4.8rem;
+  }
+  .dropdown-element-title {
+    padding: 2.4rem !important;
+    font-size: 2.4rem;
+  }
+  .img {
+    &__pic-of-me {
+      &__box {
+        &::after {
+          top: -4rem;
+          right: -4rem;
+        }
+      }
+    }
+  }
+  .col- {
+    &4 {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
+
+// 594px
+@media (max-width: 37.12em) {
+  html {
+    font-size: 43.75%;
+  }
+  .container {
+    width: 60rem;
+  }
+
+  .aboutme-text {
+    font-size: 2.6rem;
+  }
+
+  .dropdown-content {
+    font-size: 2.4rem;
+  }
+  .heading__primary {
+    font-size: 5.4rem;
+    width: 50rem;
+  }
+  .menu__desktop {
+    height: 20rem !important;
+  }
+
+  .knowmore__icon {
+    font-size: 5.6rem;
+  }
+
+  iframe {
+    height: 25rem;
+  }
+}
+
+// 492px
+@media (max-width: 30.75em) {
+  .container {
+    width: 50rem;
+  }
+  html {
+    font-size: 37.5%;
+  }
+  .heading__secondary {
+    text-align: center;
+  }
+  .img {
+    &__pic-of-me {
+      &__box {
+        width: 100%;
+        &::after {
+          top: -7rem;
+          right: -7rem;
+        }
+      }
+    }
+  }
+
+  iframe {
+    height: 30rem;
+  }
+}
+
+// 387px
+@media (max-width: 24.18rem) {
+  .container {
+    width: 40rem;
+  }
+}
+
+// 344px
+@media (max-width: 21.43em) {
+  .container {
+    width: 35rem;
+  }
+}
+
+// 304px
+@media (max-width: 19em) {
+  .container {
+    width: 30rem;
+  }
+
+  .heading__primary {
+    font-size: 5.4rem;
+    width: 40rem;
+  }
+}
